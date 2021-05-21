@@ -140,7 +140,7 @@ every town/country I am travelling to.</text>
 
       <div style = {{backgroundColor: '#f8f8ff', flexDirection: 'column', display: 'flex', justifyContent: 'flex-start', alignItems: 'center'}}>
         <hr style = {{background: 'linear-gradient(to left, #f0cae1, #f9e9f2)', bottom: 7.5, width: 650, height: 25, borderRightColor: 'transparent', borderLeftColor: ' transparent', borderTopColor: 'transparent', borderRight: 1,   borderColor: "transparent", position: 'relative'}}></hr>
-        <text style = {{position: 'relative', top: 70, fontStyle: 'italic', fontWeight: 'bold', fontSize: 24}}>Ioana R�jni?a</text>
+        <text style = {{position: 'relative', top: 70, fontStyle: 'italic', fontWeight: 'bold', fontSize: 24}}>Ioana Rîjniță</text>
         <hr style = {{width: 230, position: 'relative', bottom: -75, borderWidth: 1, borderColor: 'black' }}></hr>
         <text style = {{position: 'relative', bottom: -75, fontStyle: 'italic', fontSize: 18}}>Student</text>
         <CircularProgress  style = {{width: 200, height: 200, bottom: 70, position: 'relative', color: 'black' }} thickness = {1}></CircularProgress>
