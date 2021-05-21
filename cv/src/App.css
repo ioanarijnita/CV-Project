@@ -12,6 +12,84 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.App-picture{
+  height: 100px;
+  width: 150px;
+}
+
+.ribbon{
+  position:relative;
+  padding: 0 0.5em;
+  font-size:2.000em;
+  margin: 0 0 0 -0.625em;
+  right: 10px;
+  line-height: 1.875em; 
+  color: #e6e2c8; 
+  border-radius: 0 0.156em 0.156em 0;
+  background:linear-gradient(to right, #e7accf, #f0cae1);
+  box-shadow: 0px 10px 10px grey;
+  /* width: 100px;
+  height: 100px; */
+  animation-name: example;
+  animation-duration: 1.5s;  
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.ribbon:before, .ribbon:after{
+  position:absolute;
+  content: '';
+  display: block;
+}
+
+.content{
+  width: 80%;
+  max-width: 900px;
+  min-height: 3.750em; 
+  margin: 0.75em auto;
+  padding: 10;
+  border-radius: 0.313em;
+  line-height: 1.5em;
+  color: #292929;
+}
+
+.ribbon:before{
+  width: 0.469em;
+  height: 100%;
+  padding: 0 0 0.438em;
+  top:0;
+  left: -0.369em;
+  background:inherit;
+  border-radius: 0.313em 0 0 0.313em;
+}
+
+.ribbon:after{
+  width: 0.313em;
+  height: 0.313em;
+  background: rgba(0,0,0,0.35);
+  bottom: -0.313em;
+  left: -0.313em;
+  border-radius: 0.313em 0 0 0.313em;
+  box-shadow: inset -1px 2px 2px rgba(0,0,0,0.3);
+}
+
+@keyframes example {
+  from {left: 50px; }
+  to {left: -10px;}
+}
+
+
+@media (max-width: 600px) {
+  
+  .ribbon{
+    line-height: 1.143em;
+    padding: 0.5em;
+  }
+  
+  .ribbon:before, .ribbon:after{
+    font-size: 0.714em;
+  }
+
 
 .ribbon{
   position:relative;
