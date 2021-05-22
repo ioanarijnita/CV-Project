@@ -90,7 +90,7 @@
     font-size: 0.714em;
   }
 
-
+}
 .ribbon{
   position:relative;
   padding: 0 0.5em;
@@ -197,6 +197,5 @@
   to {
     transform: rotate(360deg);
   }
-}
 }
 }
