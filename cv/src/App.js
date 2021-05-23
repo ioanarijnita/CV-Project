@@ -20,9 +20,6 @@ import information from './assets/information.png'
 import nationality from './assets/nationality.png'
 import gender from './assets/gender.png'
 import birthdate from './assets/birthdate.png'
-
-
-import { CircularProgressbar } from 'react-circular-progressbar';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 function Ribbon({text}) {
@@ -109,15 +106,15 @@ function SkillsItem({name, list}){
 
 }
 function App() {
-  const percentage = 66;
-
+  
   const listPoli = ["Intermediate Java knowledge, OOP", "Intermediate C programming language: pointers, dynamic allocation, data structures and algorithms", "Basic knowledge in functional programming using OCaml and Lisp", "Familiar with Agile Development and Linux"];
   const listUvt = ["Advanced knowledge in statistics, econometrics, microeconomy and macroeconomy", "Intermediate knowledge in accounting, financial management and marketing, public finance and  corporate finance", "Basic knowledge in capital markets, financial control and baking operations"];
   const listDigital =["MS Office (MS Word, MS Excel, MS PowerPoint, MS Access, MS Outlook)", " Qualification certificate “ECDLCore, 7 Modules”", "Good Internet and E-mail skills"];
   const listCommunication = ["Team-working skills", "Good communication skills gained as a student through 2-4 member projects for university", "Good communicator and listener", "Organizational and planning skills"];
+
   return (
     <div style = {{marginTop: 20, display: 'flex', marginLeft: 190, marginRight: 190, backgroundColor: 'white'}}>
-      <div style = {{width: 400 , height: '100%', backgroundColor: '#b4b4bc'}}>
+      <div style = {{width: 400 , backgroundColor: '#b4b4bc'}}>
         <hr style = {{background: 'linear-gradient(to right, #f0cae1, #f9e9f2)', height: 25, borderRightColor: 'transparent', borderRight: 1,  bottom: 8, borderColor: "transparent", position: 'relative'}}></hr>
         <div style = {{display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative', bottom: 16}}>
           <div style = {{width: 0, height: 0, borderStyle: 'solid', borderBottomWidth: 0, borderLeftWidth: 10, borderRightWidth: 10, borderTopWidth: 20, borderTopColor: '#f5daea', backgroundColor: 'transparent', borderBottomcolor: "transparent", borderLeftColor: 'transparent', borderRightColor:'transparent'}}></div> 
@@ -145,19 +142,18 @@ function App() {
           </div>
           <br />
           <br />
-
           <div className = "englishHover">
             <ProfileItem img = {french}  text = {"French"}></ProfileItem>
           </div>
           <div className = "hide">
             <img src = {french1}></img>
           </div>
-      
         </div>
         <Ribbon text = {"Hobbies"}></Ribbon>
         <ProfileItem img ={movies}></ProfileItem>
         <div style = {{marginLeft: 5}}>
           <text style = {{fontStyle: 'italic', marginLeft: 15, position: 'relative', left: 5, color: 'white'}}>I enjoy going to the theatre and watching old movies (favorite directors: </text>
+          &nbsp;
           <a href = "https://www.imdb.com/name/nm0000033/" style = {{color: 'white'}}>
             <text style = {{color: 'white', fontStyle: 'italic'}}>Alfred Hitchcock </text>
           </a>
@@ -171,8 +167,9 @@ function App() {
         <ProfileItem img ={books}></ProfileItem>
         <div style = {{marginLeft: 5}}>
           <text style = {{fontStyle: 'italic', marginLeft: 15, position: 'relative', left: 5, color: 'white'}}>Because my study field is technical, I really like spending some time reading classical books from
-  authors such as .</text>
-  <a href = "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky" style = {{color: 'white'}}>
+          authors such as </text>
+          &nbsp;
+          <a href = "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky" style = {{color: 'white'}}>
             <text style = {{color: 'white', fontStyle: 'italic'}}>Dostoievski</text>
           </a>
           <text style = {{color: 'white', fontStyle: 'italic'}}>, </text>
@@ -184,34 +181,29 @@ function App() {
             <text style = {{color: 'white', fontStyle: 'italic'}}>Mircea Eliade.</text>
           </a>
         </div>
-<br/><br/>
+        <br/><br/>
         <ProfileItem img ={painting}></ProfileItem>
         <div style = {{marginLeft: 5}}>
           <text style = {{fontStyle: 'italic', marginLeft: 15, position: 'relative', left: 5, color: 'white'}}>Another passion that I have is on the creative side: painting. I also enjoy buying pieces of art from
-every town/country I am travelling to.</text>
+        every town/country I am travelling to.</text>
         </div>
-        <br /><br /><br /><br /><br /><br /><br />
       </div>
-      
 
       <div style = {{backgroundColor: '#f8f8ff', flexDirection: 'column', display: 'flex', alignItems: 'center'}}>
-        <hr style = {{background: 'linear-gradient(to left, #f0cae1, #f9e9f2)', bottom: 7.5, width: 650, height: 25, borderRightColor: 'transparent', borderLeftColor: ' transparent', borderTopColor: 'transparent', borderRight: 1,   borderColor: "transparent", position: 'relative'}}></hr>
+        <hr style = {{background: 'linear-gradient(to left, #f0cae1, #f9e9f2)', bottom: 7.5, width: "100%", height: 25, borderRightColor: 'transparent', borderLeftColor: ' transparent', borderTopColor: 'transparent', borderRight: 1,   borderColor: "transparent", position: 'relative'}}></hr>
         <text style = {{position: 'relative', top: 70, fontStyle: 'italic', fontWeight: 'bold', fontSize: 24}}>Ioana Rîjniță</text>
         <hr style = {{width: 230, position: 'relative', bottom: -75, borderWidth: 1, borderColor: 'black' }}></hr>
         <text style = {{position: 'relative', bottom: -75, fontStyle: 'italic', fontSize: 18}}>Student</text>
         <CircularProgress  style = {{width: 200, height: 200, bottom: 70, position: 'relative', color: 'black' }} thickness = {1}></CircularProgress>
         <CvItem text = "Education and training" img = {education}></CvItem>
-        {/* incepe */}
         <DegreeItem degree = "Bachelor's Degree" university = "Polytechnic University of Timisoara, Faculty of Automation and Computing" date = "[ 23/09/2019 – Current ]" fieldOfStudy = "Computers and Information Technology in romanian language" list = {listPoli}></DegreeItem>
         <DegreeItem degree = "Bachelor's Degree" university = "University of West, Faculty of Economy and Business Administration" date = "[ 30/09/2019 – Current ]"fieldOfStudy = "Finance and Banking in English language" list = {listUvt}></DegreeItem>
         <DegreeItem degree ="High School Diploma" university = "Colegiul Național Bănățean" date = "[ 15/09/2014 – 29/05/2018 ]" fieldOfStudy = "Mathematics and Informatics" list = {["Basic C++ programming"]}></DegreeItem>
         <br />
         <CvItem text = "Personal skills" img = {creativity}></CvItem>
-
         <div style = {{display: 'flex', alignSelf: 'flex-start', flexDirection: 'column'}}>
           <SkillsItem name = "Digital skills" list = {listDigital}></SkillsItem>
           <SkillsItem name = "Communication skills" list = {listCommunication}></SkillsItem>
-          
         </div>
         <CvItem text = "Additional information" img = {information}></CvItem>
         <div style = {{display: 'flex', alignSelf: 'flex-start', flexDirection: 'column'}}>
@@ -227,8 +219,7 @@ every town/country I am travelling to.</text>
             <li>
             ECDL certificate (7 modules)
             </li>
-          </ul>
-          
+          </ul>     
           <p style ={{fontSize: 20, color: 'black', fontWeight: 'bold', position: 'relative', left: 40}}>Projects</p>
           <ul>
             <li>
@@ -236,7 +227,7 @@ every town/country I am travelling to.</text>
             </li>
             <li>
             Smart Banking App (using Java programming language, JafaFx, Scene-Builder, Nitrite Database and
-Gradle). Project on going in a team of 2 members.
+            Gradle). Project on going in a team of 2 members.
             </li>
           </ul>
         </div>
