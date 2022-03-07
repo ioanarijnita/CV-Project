@@ -1,5 +1,3 @@
-# Catharsis
-
 ## Description
 
 Catharsis come as a web application that puts at the users' disposal tickets for theater shows taking place around them. By accessing the web site, the user is able to see a list of all the theater events from the city selected and a written and visual description of them, along with the possibility to select the available seat/s in the theaters’ auditorium. 
@@ -14,10 +12,12 @@ The methods of payment are specified at the top of the page, in two different cu
 
 Project was created using the following: 
 
-     * ReactJS:  <Badge name = “React”/>
-     * NodeJS
-     * MySQL
+* Add a review along with a status (Accepted/Rejected request) for each request of each client (a client can send multiple requests to the bank)
 
+* Add a review along with a status (Accepted/Rejected request) for each request of each client (a client can send multiple requests to the bank)
+
+* Add a review along with a status (Accepted/Rejected request) for each request of each client (a client can send multiple requests to the bank)
+     
 <img src="docs/listbankrequestsbank.png"/>
 
 * Add a review along with a status (Accepted/Rejected request) for each request of each client (a client can send multiple requests to the bank)
